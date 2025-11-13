@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Name 4 - Kevin Riedo Portfolio">
+    <title>Project Name 4 - Kevin Riedo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="../index.html" class="back-link">← Kembali ke Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="project-title">Project Name 4</h1>
+                <p class="project-subtitle">Full-stack web application built with Laravel and MySQL</p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role:</span>
+                        <span class="meta-value">Full Stack Developer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Duration:</span>
+                        <span class="meta-value">3 Months</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Year:</span>
+                        <span class="meta-value">2024</span>
+                    </div>
+                </div>
+                <div class="project-links-hero">
+                    <a href="#" class="btn-primary" target="_blank">
+                        <span>🌐</span> Live Demo
+                    </a>
+                    <a href="#" class="btn-secondary" target="_blank">
+                        <span>💻</span> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-section">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>Overview</h2>
+                    <p>
+                        [Jelaskan project Anda di sini. Berikan gambaran umum tentang apa yang dilakukan aplikasi ini, 
+                        masalah apa yang diselesaikan, dan siapa target pengguna nya. Buat beberapa paragraf yang 
+                        menjelaskan konteks dan tujuan project.]
+                    </p>
+                    <p>
+                        Contoh: "Project ini adalah platform e-commerce yang dirancang untuk memudahkan UMKM dalam 
+                        mengelola toko online mereka. Dengan fitur inventory management yang terintegrasi, pemilik 
+                        usaha dapat dengan mudah tracking stock, mengelola pesanan, dan menganalisis penjualan 
+                        dalam satu dashboard."
+                    </p>
+
+                    <h2>Key Features</h2>
+                    <ul class="features-list">
+                        <li>
+                            <strong>User Authentication & Authorization:</strong> 
+                            Sistem login yang aman dengan role-based access control untuk admin dan customer
+                        </li>
+                        <li>
+                            <strong>Product Management:</strong> 
+                            CRUD operations untuk mengelola produk dengan upload gambar multiple
+                        </li>
+                        <li>
+                            <strong>Shopping Cart & Checkout:</strong> 
+                            Keranjang belanja interaktif dengan payment gateway integration
+                        </li>
+                        <li>
+                            <strong>Order Management:</strong> 
+                            Sistem tracking pesanan dari pemesanan hingga pengiriman
+                        </li>
+                        <li>
+                            <strong>Admin Dashboard:</strong> 
+                            Dashboard analytics dengan grafik penjualan dan inventory status
+                        </li>
+                        <li>
+                            <strong>Responsive Design:</strong> 
+                            Mobile-friendly interface yang dapat diakses dari berbagai device
+                        </li>
+                    </ul>
+
+                    <h2>Technology Stack</h2>
+                    <div class="tech-stack">
+                        <div class="tech-category">
+                            <h3>Backend</h3>
+                            <div class="tech-tags">
+                                <span class="tech-badge">Laravel 9</span>
+                                <span class="tech-badge">PHP 8.1</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">RESTful API</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Frontend</h3>
+                            <div class="tech-tags">
+                                <span class="tech-badge">Blade Templates</span>
+                                <span class="tech-badge">Bootstrap 5</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">jQuery</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Tools & Others</h3>
+                            <div class="tech-tags">
+                                <span class="tech-badge">Git</span>
+                                <span class="tech-badge">Composer</span>
+                                <span class="tech-badge">npm</span>
+                                <span class="tech-badge">Postman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenge-solution">
+                        <div class="challenge-item">
+                            <h4>🔥 Challenge 1: Payment Integration</h4>
+                            <p>
+                                Mengintegrasikan payment gateway dengan berbagai metode pembayaran yang berbeda-beda.
+                            </p>
+                            <h4>✅ Solution:</h4>
+                            <p>
+                                Menggunakan adapter pattern untuk membuat abstraction layer yang memudahkan integrasi 
+                                dengan multiple payment providers. Ini membuat sistem lebih flexible dan mudah untuk 
+                                menambah payment method baru di masa depan.
+                            </p>
+                        </div>
+                        <div class="challenge-item">
+                            <h4>🔥 Challenge 2: Real-time Stock Updates</h4>
+                            <p>
+                                Menjaga konsistensi data stock ketika ada multiple users yang melakukan transaksi bersamaan.
+                            </p>
+                            <h4>✅ Solution:</h4>
+                            <p>
+                                Implementasi database transactions dan row-level locking untuk mencegah race conditions. 
+                                Juga menggunakan Laravel Queue untuk memproses order secara asynchronous.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h2>Learning Outcomes</h2>
+                    <ul class="learning-list">
+                        <li>Memahami MVC architecture dan best practices dalam Laravel development</li>
+                        <li>Belajar tentang database optimization dan query performance</li>
+                        <li>Pengalaman dalam integrating third-party APIs (payment, shipping, etc.)</li>
+                        <li>Implementasi security best practices (SQL injection prevention, XSS protection)</li>
+                        <li>Understanding of e-commerce business logic dan user flow</li>
+                    </ul>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3>Project Info</h3>
+                        <dl class="project-info">
+                            <dt>Category</dt>
+                            <dd>Web Application</dd>
+                            
+                            <dt>Platform</dt>
+                            <dd>Web (Desktop & Mobile)</dd>
+                            
+                            <dt>Status</dt>
+                            <dd><span class="status-badge completed">Completed</span></dd>
+                            
+                            <dt>Team Size</dt>
+                            <dd>Solo Project</dd>
+                        </dl>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Technologies Used</h3>
+                        <div class="sidebar-tech">
+                            <span class="sidebar-tech-badge">Laravel</span>
+                            <span class="sidebar-tech-badge">PHP</span>
+                            <span class="sidebar-tech-badge">MySQL</span>
+                            <span class="sidebar-tech-badge">Bootstrap</span>
+                            <span class="sidebar-tech-badge">JavaScript</span>
+                            <span class="sidebar-tech-badge">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>External Links</h3>
+                        <div class="external-links">
+                            <a href="#" class="external-link" target="_blank">
+                                <span>🌐</span> Live Website
+                            </a>
+                            <a href="#" class="external-link" target="_blank">
+                                <span>💻</span> GitHub Repository
+                            </a>
+                            <a href="#" class="external-link" target="_blank">
+                                <span>📹</span> Video Demo
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Gallery -->
+    <section class="project-section gallery-section">
+        <div class="container">
+            <h2>Screenshots & Demo</h2>
+            <p class="section-description">Berikut adalah beberapa tampilan dari aplikasi</p>
+            
+            <div class="gallery">
+                <!-- Screenshot 1 -->
+                <div class="gallery-item">
+                    <img src="../assets/projects/project4/image1.jpg" 
+                         alt="Homepage" 
+                         onclick="openLightbox(this)"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%236366f1\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\'%3EImage 1%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-caption">
+                        <h4>Homepage</h4>
+                        <p>Landing page dengan featured products dan promotional banners</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 2 -->
+                <div class="gallery-item">
+                    <img src="../assets/projects/project4/image2.jpg" 
+                         alt="Product Listing" 
+                         onclick="openLightbox(this)"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%238b5cf6\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\'%3EImage 2%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-caption">
+                        <h4>Product Listing</h4>
+                        <p>Halaman katalog dengan filtering dan sorting options</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 3 -->
+                <div class="gallery-item">
+                    <img src="../assets/projects/project4/image3.jpg" 
+                         alt="Shopping Cart" 
+                         onclick="openLightbox(this)"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%23ec4899\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\'%3EImage 3%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-caption">
+                        <h4>Shopping Cart</h4>
+                        <p>Keranjang belanja interaktif dengan quantity adjustment</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 4 -->
+                <div class="gallery-item">
+                    <img src="../assets/projects/project4/image4.jpg" 
+                         alt="Admin Dashboard" 
+                         onclick="openLightbox(this)"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%2310b981\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\'%3EImage 4%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-caption">
+                        <h4>Admin Dashboard</h4>
+                        <p>Dashboard dengan sales analytics dan inventory overview</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 5 -->
+                <div class="gallery-item">
+                    <img src="../assets/projects/project4/image5.jpg" 
+                         alt="Order Management" 
+                         onclick="openLightbox(this)"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%23f59e0b\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\'%3EImage 5%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-caption">
+                        <h4>Order Management</h4>
+                        <p>Admin panel untuk tracking dan managing orders</p>
+                    </div>
+                </div>
+
+                <!-- Screenshot 6 -->
+                <div class="gallery-item">
+                    <img src="../assets/projects/project4/image6.jpg" 
+                         alt="Mobile View" 
+                         onclick="openLightbox(this)"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'600\'%3E%3Crect fill=\'%2306b6d4\' width=\'800\' height=\'600\'/%3E%3Ctext fill=\'white\' x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-size=\'40\'%3EImage 6%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-caption">
+                        <h4>Mobile Responsive</h4>
+                        <p>Tampilan mobile-friendly untuk akses dari smartphone</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Other Projects -->
+    <section class="project-section other-projects">
+        <div class="container">
+            <h2>Lihat Project Lainnya</h2>
+            <div class="other-projects-grid">
+                <a href="project2.html" class="other-project-card">
+                    <div class="other-project-image">
+                        <img src="../assets/projects/project2/thumbnail.jpg" alt="Project 2" onerror="this.parentElement.innerHTML='<div class=project-emoji>📱</div>'">
+                    </div>
+                    <h4>Project Name 2</h4>
+                </a>
+                <a href="project3.html" class="other-project-card">
+                    <div class="other-project-image">
+                        <img src="../assets/projects/project3/thumbnail.jpg" alt="Project 3" onerror="this.parentElement.innerHTML='<div class=project-emoji>🎮</div>'">
+                    </div>
+                    <h4>Project Name 3</h4>
+                </a>
+                <a href="project4.html" class="other-project-card">
+                    <div class="other-project-image">
+                        <img src="../assets/projects/project4/thumbnail.jpg" alt="Project 4" onerror="this.parentElement.innerHTML='<div class=project-emoji>💻</div>'">
+                    </div>
+                    <h4>Project Name 4</h4>
+                </a>
+            </div>
+            <div class="text-center">
+                <a href="../index.html#projects" class="btn-back">← Kembali ke Semua Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kevin Riedo. Built with passion ✨</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/detail.js"></script>
+</body>
+</html>

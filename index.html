@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Kevin Riedo - Computer Science Graduate & Programmer">
+    <meta name="author" content="Kevin Riedo">
+    <title>Portfolio - Kevin Riedo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Three.js Background Canvas -->
+    <canvas id="three-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Kevin Riedo</h1>
+            <p class="subtitle">Computer Science Graduate | Programmer</p>
+            <a href="#projects" class="cta-button">Lihat Projects Saya</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Halo! Saya adalah fresh graduate Computer Science yang passionate dalam mengembangkan solusi teknologi yang inovatif dan user-friendly.</p>
+                    <p>Dengan pengalaman dalam full-stack development, mobile app development, dan game development, saya selalu excited untuk belajar teknologi baru dan menghadapi tantangan yang kompleks.</p>
+                    <p>Saya percaya bahwa code yang baik bukan hanya yang berfungsi, tetapi juga yang readable, maintainable, dan scalable.</p>
+                </div>
+                <div>
+                    <div class="profile-placeholder">
+                        👨‍💻
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Three.js</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Klik pada project untuk melihat detail lengkap</p>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <a href="projects/project1.html" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/project1/thumbnail.jpg" alt="Project 1" onerror="this.parentElement.innerHTML='<div class=project-emoji>🌐</div>'">
+                        <div class="project-overlay">
+                            <span class="view-details">Lihat Detail →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 1</h3>
+                        <p>Deskripsi singkat project 1. Klik untuk melihat detail lengkap dengan multiple screenshots dan penjelasan.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="projects/project2.html" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/project2/thumbnail.jpg" alt="Project 2" onerror="this.parentElement.innerHTML='<div class=project-emoji>📱</div>'">
+                        <div class="project-overlay">
+                            <span class="view-details">Lihat Detail →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 2</h3>
+                        <p>Deskripsi singkat project 2. Klik untuk melihat detail lengkap dengan multiple screenshots dan penjelasan.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Android</span>
+                            <span class="tech-badge">SQLite</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="projects/project3.html" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/project3/thumbnail.jpg" alt="Project 3" onerror="this.parentElement.innerHTML='<div class=project-emoji>🎮</div>'">
+                        <div class="project-overlay">
+                            <span class="view-details">Lihat Detail →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 3</h3>
+                        <p>Deskripsi singkat project 3. Klik untuk melihat detail lengkap dengan multiple screenshots dan penjelasan.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Unity</span>
+                            <span class="tech-badge">C#</span>
+                            <span class="tech-badge">3D</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="projects/project4.html" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/project4/thumbnail.jpg" alt="Project 4" onerror="this.parentElement.innerHTML='<div class=project-emoji>💻</div>'">
+                        <div class="project-overlay">
+                            <span class="view-details">Lihat Detail →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 4</h3>
+                        <p>Deskripsi singkat project 4. Klik untuk melihat detail lengkap dengan multiple screenshots dan penjelasan.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Django</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 5 -->
+                <a href="projects/project5.html" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/project5/thumbnail.jpg" alt="Project 5" onerror="this.parentElement.innerHTML='<div class=project-emoji>🚀</div>'">
+                        <div class="project-overlay">
+                            <span class="view-details">Lihat Detail →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 5</h3>
+                        <p>Deskripsi singkat project 5. Klik untuk melihat detail lengkap dengan multiple screenshots dan penjelasan.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 6 -->
+                <a href="projects/project6.html" class="project-card">
+                    <div class="project-image">
+                        <img src="assets/projects/project6/thumbnail.jpg" alt="Project 6" onerror="this.parentElement.innerHTML='<div class=project-emoji>⚡</div>'">
+                        <div class="project-overlay">
+                            <span class="view-details">Lihat Detail →</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Name 6</h3>
+                        <p>Deskripsi singkat project 6. Klik untuk melihat detail lengkap dengan multiple screenshots dan penjelasan.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Vue.js</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Tailwind</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Connect!</h2>
+                <p class="subtitle">Tertarik untuk berkolaborasi atau punya pertanyaan? Jangan ragu untuk menghubungi saya!</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <span>📧</span> Email
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="https://github.com/kevinriedo-dev" target="_blank" class="contact-link">
+                        <span>💻</span> GitHub
+                    </a>
+                    <a href="https://wa.me/yourphonenumber" target="_blank" class="contact-link">
+                        <span>💬</span> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kevin Riedo. Built with passion and Three.js ✨</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
